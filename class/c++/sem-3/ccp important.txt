@@ -1,0 +1,6 @@
+c++ ki class private hai
+struct is public
+union is w.variable it can not be use in linked list
+linked list can be made by the struct or the 
+
+

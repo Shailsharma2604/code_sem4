@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    <style>
+        /* CSS styles for the visualizer container */
+        #visualizer-container {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        /* CSS styles for individual bars */
+        .bar {
+            width: 20px;
+            background-color: #3498db;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Algorithm Visualizer</h1>
+    <div id="visualizer-container">
+        <!-- Bars will be dynamically generated here -->
+    </div>
+    <button onclick="visualizeAlgorithm()">Visualize Algorithm</button>
+
+    <script>
+        // JavaScript code for algorithm visualization
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function visualizeAlgorithm() {
+            const visualizerContainer = document.getElementById('visualizer-container');
+            visualizerContainer.innerHTML = ''; // Clear existing bars
+
+            const numBars = 20; // Number of bars to visualize
+            const barWidth = 30;
+            const maxBarHeight = 300;
+
+            // Generate random bar heights
+            const barHeights = [];
+            for (let i = 0; i < numBars; i++) {
+                barHeights.push(Math.floor(Math.random() * maxBarHeight) + 1);
+            }
+
+            // Create and position bars
+            for (let i = 0; i < numBars; i++) {
+                const bar = document.createElement('div');
+                bar.className = 'bar';
+                bar.style.height = `${barHeights[i]}px`;
+                bar.style.width = `${barWidth}px`;
+                bar.style.left = `${i * (barWidth + 5)}px`;
+                visualizerContainer.appendChild(bar);
+                await sleep(100); // Delay for visualization
+            }
+        }
+    </script>
+</body>
+</html>

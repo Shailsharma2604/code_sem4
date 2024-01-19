@@ -1,0 +1,38 @@
+/* body{
+    font-family:Helvetica;
+    font-weight: 500;
+    background-color: black;
+}
+h1{
+    font-family:sans-serif;
+    background-color: white; */
+/* } */
+/* .main{
+    background-color: brown;
+} */
+/* h1{
+    border: 10px solid red;
+    padding-left:40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+} */
+/* .shail{
+    border-width: 4px;
+    border-style: solid;
+    border-color: chartreuse;
+} */
+
+/* h1{
+    padding: 40px;
+    border: solid red;
+    margin: 50px;
+}
+ */
+
+ .heading{
+    background-image: url(Nitro_Wallpaper_5000x2813.jpg);
+    background-repeat: no-repeat;
+    background-position:fixed;
+    color: brown;
+    background-color: yellow;
+ }

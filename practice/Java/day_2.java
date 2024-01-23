@@ -18,6 +18,7 @@ public class day_2 {
         float average_3= (a+b+c+d+e)/5;
         System.out.println("Your Marks average int = "+average_1);
         System.out.println("Your Marks average double = "+average_2);
-        System.out.println("Your Marks average float = "+average_3);
+        System.out.println("Your Marks average float = "+average_3
+        );
     }
 }

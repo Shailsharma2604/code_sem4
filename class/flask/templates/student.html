@@ -1,6 +1,6 @@
 <html>
     <body>
-        <form action = "http://localhost:5000/result" method = "POST">
+        <form name="myform" action = "http://localhost:5000/result" method = "POST" onsubmit= "return validateform()">
             <p>
                 Name <input type = "text" name = "Name"/>
             </p>
@@ -19,3 +19,18 @@
         </form>
     </body>
 </html>
+
+<script>
+    function validateform(){
+        var name=document.myform.name.value;
+        var Physics=document.myform.Physics.value;
+
+        if(Name==null){
+            alert("Name can't be Blank");
+            return false;
+        }else if(Physics.length<6){
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+    }
+</script>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form name="myform" action = "http://localhost:5000/result" method = "POST" onsubmit= "return validateform()">
+            <p>
+                First_Name <input type = "text" name = "First_Name" />
+            </p>
+            <p>
+                Second_Name <input type = "text" name = "Second_Name" />
+            </p>
+            <p>
+                AGE <input type = "int" name = "AGE" required/>
+            </p>
+            <p>
+                Phone_Number <input type = "int" name = "Phone_Number" required/>
+            </p>
+            <p>
+                <input type = "submit" value = "submit" required/>
+            </p>
+        </form>
+    </body>
+</html>
+
+<script>
+    function validateform(){
+        var First_Name=document.myform.First_Name.value;
+        var Second_Name=document.myform.Second_Name.value;
+        var AGE=document.myform.AGE.value;
+
+        if(First_Name==""){
+            alert("First_Name can't be Blank");
+            return false;
+        }else if(Second_Name==""){
+            alert("Second_Name can't be Blank");
+            return false;
+        }else if(AGE.length>3){
+            alert("AGE must be at max 2 characters long.");
+            return false;
+        }
+    }
+</script>

@@ -20,14 +20,16 @@ class myclass implements demo2{
     public void meth3(){
         System.out.println("Method 3");
     }
-
+    public void show(){
+        meth1();
+        meth2();
+        meth3();
+    }
 }
 
 public class IFextend {
     public static void main(String[] args) {
         myclass ob=new myclass();
-        ob.meth1();
-        ob.meth2();
-        ob.meth3();
+        ob.show();
     }
 }

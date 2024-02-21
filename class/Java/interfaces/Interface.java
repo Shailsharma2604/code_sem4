@@ -1,16 +1,14 @@
-package p2;
-  class AnotherClient implements Callback{
+package interfaces;
+// Interfaces are collection of methods
+interface Callback{
+    void Callback(int param);
+}
+public class Interface implements Callback {
+    // when you implement an interface method , it must be declared as public 
     public void Callback(int p){
-
+        System.out.println("Interface used with parameter "+p);
     }
-  }
-
-
-public class Interface {
-    public static void main(String[] args) {
-        AnotherClient e= new AnotherClient();
-        Callback ob=new Interface();
-        ob=e;
-        ob.Callback(param:42);
+    void show(){
+        System.out.println("Member of InterfaceE class");
     }
 }

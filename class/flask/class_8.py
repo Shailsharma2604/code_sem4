@@ -23,7 +23,8 @@ def addrec():
 
             with sql.connect('database.db') as con:
                 cur = con.cursor()
-                cur.execute("INSERT INTO students (name, addr, city, pin) VALUES (?,?,?,?)", (nm, addr, city, pin))
+                # cur.execute("CREATE TABLE student3 (name TEXT, addr TEXT, city TEXT, pin TEXT)")
+                cur.execute("INSERT INTO student3 (name, addr, city, pin) VALUES (?,?,?,?)", (nm, addr, city, pin))
                 con.commit()
                 msg = "Record successfully added"
         except:
@@ -39,7 +40,7 @@ def list():
     con.row_factory = sql.Row
 
     cur = con.cursor()
-    cur.execute("select * from students")
+    cur.execute("select * from student3")
 
     rows = cur.fetchall()
     return render_template("list.html", rows = rows)            

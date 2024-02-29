@@ -23,34 +23,45 @@
 // 10. replace()
 // 11. subString()
 
+
+
 public class StrBuffer {
     public static void main(String[] args) {
         StringBuffer bf = new StringBuffer("HELLO");
         System.out.println(bf);
         bf.insert(5," WORLD!");
         System.out.println("Use of insert  method : "+bf);
-        //use of length and acpacity
-        System.out.println("\nLength: "+bf.length()+"\tCapacity:"+bf.capacity());
-        //use of ensure  capacity
-        bf.ensureCapacity(80);
-        System.out.println("\nAfter using ensure Capacity Method:\nLength: "+bf.length()+"\tCapacity:"+bf.capacity());
-        //use of stlength
-        bf.setLength(80);
-        System.out.println("\nAfter using setLength, Length: "+bf.length());
-        //use of charat and setcharat
-        System.out.println(bf.charAt(3));
-        bf.setCharAt(3,'z');
-        System.out.println("After using setCharAt, string is :"+bf);
-        //use of getchars()
-            char c[]=new char[6];
-            bf.getChars(1,7,c,0);
-            System.out.print("Substring from index 1 to 7 are : "+ new String(c));
-            //use of append
-            bf.append(" Java Programming.");
-            System.out.println("\nAfter appending the string : "+bf);
-            //use of reverse
-            bf.reverse();
-            System.out.println("\nReversed string is : "+bf);
-     
+        // //use of length and acpacity
+        // System.out.println("\nLength: "+bf.length()+"\tCapacity:"+bf.capacity());
+        // //use of ensure  capacity
+        // bf.ensureCapacity(80);
+        // System.out.println("\nAfter using ensure Capacity Method:\nLength: "+bf.length()+"\tCapacity:"+bf.capacity());
+        // //use of stlength
+        // bf.setLength(80);
+        // System.out.println("\nAfter using setLength, Length: "+bf.length());
+        // //use of charat and setcharat
+        // System.out.println(bf.charAt(3));
+        // bf.setCharAt(3,'z');
+        // System.out.println("After using setCharAt, string is :"+bf);
+        // //use of getchars()
+        //     char c[]=new char[6];
+        //     bf.getChars(1,7,c,0);
+        //     System.out.print("Substring from index 1 to 7 are : "+ new String(c));
+        //     //use of append
+        //     bf.append(" Java Programming.");
+        //     System.out.println("\nAfter appending the string : "+bf);
+        //     //use of reverse
+        //     bf.reverse();
+        //     System.out.println("\nReversed string is : "+bf);
+            // use of delete deletecharAt
+            System.out.println("use of delete: "+bf.delete(2,4));
+            System.out.println("After deleting character at index 4 : "+bf.deleteCharAt(4));
+        //use of replace
+        System.out.println("After replacing 'o' with 'x', the string becomes :   "+bf.replace(2,4,"xx"));
+        //use of substring
+        System.out.println("Substring from index 2 to 9 : "+bf.substring(2,9)+"\n");
+        
+
+        
     }
 }

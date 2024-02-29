@@ -42,7 +42,7 @@ public class StrBuffer {
         // //use of charat and setcharat
         // System.out.println(bf.charAt(3));
         // bf.setCharAt(3,'z');
-        // System.out.println("After using setCharAt, string is :"+bf);
+        // System.out.println("After using setCharAt, string is : "+bf);
         // //use of getchars()
         //     char c[]=new char[6];
         //     bf.getChars(1,7,c,0);
@@ -54,10 +54,10 @@ public class StrBuffer {
         //     bf.reverse();
         //     System.out.println("\nReversed string is : "+bf);
             // use of delete deletecharAt
-            System.out.println("use of delete: "+bf.delete(2,4));
+            System.out.println("use of delete : "+bf.delete(2,4));
             System.out.println("After deleting character at index 4 : "+bf.deleteCharAt(4));
         //use of replace
-        System.out.println("After replacing 'o' with 'x', the string becomes :   "+bf.replace(2,4,"xx"));
+        System.out.println("After replacing 'o' with 'x', the string becomes : "+bf.replace(2,4,"xx"));
         //use of substring
         System.out.println("Substring from index 2 to 9 : "+bf.substring(2,9)+"\n");
         

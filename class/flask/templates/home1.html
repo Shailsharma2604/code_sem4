@@ -1,0 +1,31 @@
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+
+<li><a href="/login">Login</a></li>
+
+<li><a href="/sign-up">Create account</a></li>
+
+</ul>
+
+</nav>
+
+{% if current_user.is_authenticated %}
+
+<h1>You are logged in</h1>
+
+<a href="/logout">Logout</a>
+
+{% else %}
+
+<h1>You are not logged in</h1>
+
+{% endif %}
+
+</body>
+
+</html>

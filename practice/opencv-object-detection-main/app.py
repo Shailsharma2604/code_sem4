@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 
 from threading import Thread
 from flask import Flask, render_template, Response, redirect

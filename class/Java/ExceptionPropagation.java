@@ -1,0 +1,131 @@
+
+
+// exception handling //
+
+// static method ke andar instance method mai directly call nhi kar sakte //
+
+// throw keyword is used to throw exception explicitly//
+// we can throw eith er checked or unchecked exception in java //
+
+
+// import java.util.*;
+// public class ExceptionPropagation{
+//     void check(int age){
+//         if(age>18) System.out.println(age);
+//         else{
+//             throw new ArithmeticException("Age less than 18");
+//             // throw new Exception("Age less than 18");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         // throw new NullPointerException("Error in code");
+//         Scanner sc=new Scanner(System.in);
+//         int age=sc.nextInt();
+//         Throw ob=new Throw();
+//         ob.check(age);
+//     }
+ 
+// }
+
+////////////////////////////////////1////////////////////////////////////////
+
+// public class sir {
+
+//     public static void main(String[] args) {
+//         throw new NullPointerException("error in code!");
+//     }
+// }
+
+
+/////////////////////////////////////////2/////////////////////////////////////
+
+// import java.util.Scanner;
+
+
+// public class sir {
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int a=sc.nextInt();
+//        if(a<18){
+//         throw new ArithmeticException("age less than 18!");
+//        }
+//        else{
+//         System.out.println("ok");
+//        }
+//     }
+// }
+
+
+
+/////////////////////////////////////////3/////////////////////////////////////
+
+
+
+// by defalut Exception are called 
+// checked execution is not called in calling chain
+
+
+
+// public class ExceptionPropagation {
+//     void m(){
+//         // int a=3/0;
+//         // throw new ArithmeticException("Code error");
+//         throw new Exception("Code error");
+//     }
+//     void n(){
+//         m();
+//     }
+//     void p(){
+//         try{
+//             n();
+//         }
+//         catch(ArithmeticException e){
+//             System.out.println(e);
+//         }
+//     }
+//     public static void main(String[] args) {
+//         ExceptionPropagation ob=new ExceptionPropagation();
+//         ob.p();
+//     }
+// }
+
+
+
+// throws keyword 
+// java throws keyworld is used to declare a exception 
+// it give info to programmer
+// that there may occer an exception
+
+// checked exception can be propagated using throws keyword
+// if we are calling a method that declares an exception, then we must either caught or declare the exception
+
+
+/////////////////////////////////////////4/////////////////////////////////////
+
+
+// public class ExceptionPropagation {
+//         void m() throws exception{
+//             int a=3/0;
+//             throw new ArithmeticException("Code error");
+//             throw new Exception("Code error");
+//         }
+//         void n(){
+//             m();
+//         }
+//         void p(){
+//             try{
+//                 n();
+//             }
+//             catch(ArithmeticException e){
+//                 System.out.println(e);
+//             }
+//         }
+//         public static void main(String[] args) {
+//             ExceptionPropagation ob=new ExceptionPropagation();
+//             ob.p();
+//         }
+//     }
+
+
+/////////////////////////////////////////5/////////////////////////////////////

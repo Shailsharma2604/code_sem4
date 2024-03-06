@@ -153,14 +153,62 @@
 // if super class method declare an exception then sub class overridden method can not be declare the checked exception but not unchecked exception
 // if super class method declare an exception then sub class overridden method can declare subclass exception but not parent exception
 
+// class animal{
+//     void disp(){
+//         System.out.println("animal");
+//     }
+// }
+
+// class cat extends animal{
+//     void disp() throws ArithmeticException{
+//         System.out.println("cat");
+//     }
+// }
+
+// public class ExceptionPropagation{
+//     public static void main(String[] args) {
+//         cat c= new cat();
+//         c.disp();
+//     }
+// }
+
+
+/////////////////////////////////////////7/////////////////////////////////////
+
+
+
+// class animal{
+//     void disp() throws Exception{
+//         System.out.println("animal");
+//     }
+// }
+
+// class cat extends animal{
+//     void disp() throws NullPointerException{
+//         System.out.println("cat");
+//     }
+// }
+
+// public class ExceptionPropagation{
+//     public static void main(String[] args) {
+//         cat c= new cat();
+//         c.disp();
+//     }
+// }
+
+
+/////////////////////////////////////////8/////////////////////////////////////
+
+
+
 class animal{
-    void disp(){
+    void disp() throws Exception{
         System.out.println("animal");
     }
 }
 
 class cat extends animal{
-    void disp() throws ArithmeticException{
+    void disp() throws NullPointerException{
         System.out.println("cat");
     }
 }

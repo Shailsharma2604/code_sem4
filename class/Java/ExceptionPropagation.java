@@ -8,24 +8,6 @@
 // we can throw eith er checked or unchecked exception in java //
 
 
-// import java.util.*;
-// public class ExceptionPropagation{
-//     void check(int age){
-//         if(age>18) System.out.println(age);
-//         else{
-//             throw new ArithmeticException("Age less than 18");
-//             // throw new Exception("Age less than 18");
-//         }
-//     }
-//     public static void main(String[] args) {
-//         // throw new NullPointerException("Error in code");
-//         Scanner sc=new Scanner(System.in);
-//         int age=sc.nextInt();
-//         Throw ob=new Throw();
-//         ob.check(age);
-//     }
- 
-// }
 
 ////////////////////////////////////1////////////////////////////////////////
 
@@ -54,6 +36,30 @@
 //         System.out.println("ok");
 //        }
 //     }
+// }
+
+
+/////////////////////////////////////////or/////////////////////////////////////
+
+
+
+// import java.util.*;
+// public class ExceptionPropagation{
+//     void check(int age){
+//         if(age>18) System.out.println(age);
+//         else{
+//             throw new ArithmeticException("Age less than 18");
+//             // throw new Exception("Age less than 18");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         // throw new NullPointerException("Error in code");
+//         Scanner sc=new Scanner(System.in);
+//         int age=sc.nextInt();
+//         Throw ob=new Throw();
+//         ob.check(age);
+//     }
+ 
 // }
 
 
@@ -91,6 +97,9 @@
 // }
 
 
+/////////////////////////////////////////4/////////////////////////////////////
+
+
 
 // throws keyword 
 // java throws keyworld is used to declare a exception 
@@ -101,7 +110,6 @@
 // if we are calling a method that declares an exception, then we must either caught or declare the exception
 
 
-/////////////////////////////////////////4/////////////////////////////////////
 
 
 // public class ExceptionPropagation {
@@ -129,3 +137,37 @@
 
 
 /////////////////////////////////////////5/////////////////////////////////////
+
+
+
+// class ExceptionPropagation{
+//     public static void main(String[] args){
+//         throw new exception("error");
+//     }
+// }
+
+
+/////////////////////////////////////////6/////////////////////////////////////
+
+// exception handling with method overriding
+// if super class method declare an exception then sub class overridden method can not be declare the checked exception but not unchecked exception
+// if super class method declare an exception then sub class overridden method can declare subclass exception but not parent exception
+
+class animal{
+    void disp(){
+        System.out.println("animal");
+    }
+}
+
+class cat extends animal{
+    void disp() throws ArithmeticException{
+        System.out.println("cat");
+    }
+}
+
+public class ExceptionPropagation{
+    public static void main(String[] args) {
+        cat c= new cat();
+        c.disp();
+    }
+}

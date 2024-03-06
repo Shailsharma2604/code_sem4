@@ -48,7 +48,7 @@ def login():
             username=request.form.get("username")).first()
         if user.password == request.form.get("password"):
             login_user(user)
-            return redirect(url_for("home1"))e
+            return redirect(url_for("home1"))
     return render_template("login.html")
  
  

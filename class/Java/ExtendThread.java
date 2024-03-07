@@ -1,5 +1,7 @@
 
-// static void sleep(long milliseconds)Thread
+// static void sleep(long milliseconds) throws InterruptedException
+// static void sleep(long milliseconds int nanoseconds) throws InterruptedException
+
 
 // class NewThread extends Thread{
 //     NewThread(){

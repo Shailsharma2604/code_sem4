@@ -71,6 +71,7 @@
 // by defalut Exception are called 
 // checked execution is not called in calling chain
 
+/////////////////////////////////////////content/////////////////////////////////////
 
 
 // public class ExceptionPropagation {
@@ -199,23 +200,74 @@
 
 /////////////////////////////////////////8/////////////////////////////////////
 
+// import java.io.IOError;
+
+// class animal{
+//     void disp() throws Exception{
+//         System.out.println("animal");
+//     }
+// }
+
+// class cat extends animal{
+//     void disp() throws IOError{
+//         System.out.println("cat");
+//     }
+// }
+
+// public class ExceptionPropagation{
+//     public static void main(String[] args) {
+//         cat c= new cat();
+//         c.disp();
+//     }
+// }
 
 
-class animal{
-    void disp() throws Exception{
-        System.out.println("animal");
+/////////////////////////////////////////9/////////////////////////////////////
+
+
+
+// import java.io.IOException;
+
+// class animal{
+//     void disp() throws Exception{
+//         System.out.println("animal");
+//     }
+// }
+
+// class cat extends animal{
+//     void disp() throws IOException{
+//         System.out.println("cat");
+//     }
+// }
+
+// public class ExceptionPropagation{
+//     public static void main(String[] args) {
+//         cat c = new cat();
+//         c.disp();
+//     }
+// }
+
+
+
+/////////////////////////////////////////10/////////////////////////////////////
+
+
+// user define exception 
+// to crete our own exception class must be inherited from per defined exception class
+
+class Worng extends ArithmeticException{
+    public Worng(String s){
+        super(s);
     }
 }
-
-class cat extends animal{
-    void disp() throws NullPointerException{
-        System.out.println("cat");
-    }
-}
-
 public class ExceptionPropagation{
     public static void main(String[] args) {
-        cat c= new cat();
-        c.disp();
+        int a=5;
+        if(a<18){
+            throw new Worng("kdkdkdkd");
+        }
+        else{
+            System.out.println("ok");
+        }
     }
 }

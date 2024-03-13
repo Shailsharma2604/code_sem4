@@ -21,6 +21,19 @@ public class NonGenDemo {
        iob.Showtype();
 
        int v= (Integer) iob.getData();
-       System.out.println("valve : "+v);
+       System.out.println("value : "+v);
+
+///////////////////////////////////////////////////////////////////
+
+       NonGen strob;
+       strob = new NonGen("Non-Generics Test");
+       iob.Showtype();
+
+       String str = (String) strob.getData();
+       System.out.println("value : "+str);
+
+       iob = strob;
+       int value = (Integer) iob.getData();
+       System.out.println("value : "+value);
     }
 }

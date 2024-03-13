@@ -12,7 +12,7 @@ public class day_7 {
         // Available as int [] arr;
         int result=0;
         for(int a:arr){
-            return += a;
+            result += a;
         }
         return result;
     }
@@ -22,5 +22,6 @@ public class day_7 {
         System.out.println("The sum of 4,5,6 is :- "+sum(4,5,5));
         System.out.println("The sum of 4,5,6,7 is :- "+sum(4,5,6,7));
         System.out.println("The sum of 4,5,6,7,8 is :- "+sum(4,5,6,7,8));
+        System.out.println("The sum of 4,5,6,7,8,9 is :- "+sum(4,5,6,7,8,9));
     }
 }

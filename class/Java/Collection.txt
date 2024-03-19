@@ -1,0 +1,35 @@
+Collection interface methods
+
+1. boolean add(E obj)
+2. boolean addall(Collection<? extends e>c)
+3. void clear()
+4. boolean Contains(Object obj)
+5. boolean ContainsAll(Collection<?> c)
+6. boolean equals(Object obj)
+7. int hashcode()
+8. boolean isEmpty()
+9. Iterator<E> Iterator()
+10. boolean remove(Object obj)
+11. boolean removeAll(Collection<?> c)
+12. default boolean remofeIf(Predicate<? extends E> predicate)
+13. boolean retainAll(Collection<?> c)
+14. int size()
+15. Object[] toArray()
+16. <T> T[] toArray(T arraay[])
+
+
+
+List interface methods
+
+1. void add(int index,E obj)
+2. boolean addall(int index,Collection<?> c)
+3. E get(int index)
+4. int indexOf(Object obj)
+5. int lastIndexOf(Object obj)
+6. E remove(int index)
+7. default void removeAll(Unaryoperator<E> oToApply)
+8. E set(int index, E obj)
+9. List<E> sublist(int start,int end)
+10. 
+
+interface list<E>

@@ -30,6 +30,12 @@ List interface methods
 7. default void removeAll(Unaryoperator<E> oToApply)
 8. E set(int index, E obj)
 9. List<E> sublist(int start,int end)
-10. 
 
 interface list<E>
+
+LinkedList Class
+
+Syntax : class LinkedList<E>
+
+LinkedList()
+LinkedList(Collection <? extends E> c)

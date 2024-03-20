@@ -9,4 +9,11 @@ syntax: class Vector<E>
     2. Vector(int size)
     3. Vector(int size, int incr)
     4. Vector(Collection<? extends E> c)
-    
+
+
+
+Protected data members :-
+
+    1. int capacityIncrement
+    2. int elementCount;
+    3. int elementData;

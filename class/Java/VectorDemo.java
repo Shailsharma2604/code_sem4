@@ -6,14 +6,14 @@ import java.util.*;
 public class VectorDemo {
     public static void main(String[] args) {
 
-        ////// it for the Capacity //////
+                                                    ////// it for the Capacity //////
 
-        // Vector<String> v= new Vector<>(); it is for default capacity
+        // Vector<String> v= new Vector<>();                                         it is for default capacity
         // Vector<String> v= new Vector<>();
-        // Vector<String> v= new Vector<>(3,2); it is to take your own default capacity
+        // Vector<String> v= new Vector<>(3,2);                                      it is to take your own default capacity
         Vector<String> v= new Vector<>(3,2);
         
-        // System.out.println("Capacity of vector :- "+v.capacity()); defalut it will be 10
+        // System.out.println("Capacity of vector :- "+v.capacity());                defalut it will be 10
         System.out.println("Capacity of vector :- "+v.capacity());
 
         // v.add("A");
@@ -42,7 +42,7 @@ public class VectorDemo {
         System.out.println("Capacity of vector :- "+v.capacity());
 
 
-        ////// To find the elements //////
+                                                       ////// To find the elements //////
 
         // use of if else
 

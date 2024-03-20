@@ -61,7 +61,7 @@ public class VectorDemo {
             System.out.println(str);
         }
 
-        // use of Iterator
+        // // use of Iterator
 
         System.out.println("use of Iterator");
 
@@ -75,7 +75,7 @@ public class VectorDemo {
         System.out.println("use of Enumeration");
 
         Enumeration<String> vnum = v.elements();
-        while(vnum.hasMoreElements());
+        while(vnum.hasMoreElements())
             System.out.println(vnum.nextElement());
     }
 }

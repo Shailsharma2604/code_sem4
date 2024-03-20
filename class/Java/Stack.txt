@@ -1,0 +1,6 @@
+
+boolean empty()
+E peek()
+E pop()
+
+E push()

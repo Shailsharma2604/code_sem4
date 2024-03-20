@@ -5,6 +5,9 @@ import java.util.*;
 
 public class VectorDemo {
     public static void main(String[] args) {
+
+        ////// it for the Capacity //////
+
         // Vector<String> v= new Vector<>(); it is for default capacity
         // Vector<String> v= new Vector<>();
         // Vector<String> v= new Vector<>(3,2); it is to take your own default capacity
@@ -39,5 +42,40 @@ public class VectorDemo {
         System.out.println("Capacity of vector :- "+v.capacity());
 
 
+        ////// To find the elements //////
+
+        // use of if else
+
+        System.out.println("use of if else");
+
+        if(v.contains("A"))
+            System.out.println("A is in vector");
+        else
+            System.out.println("A is not in vector");
+
+        // use of for each
+
+        System.out.println("use of for each");
+
+        for(String str:v){
+            System.out.println(str);
+        }
+
+        // use of Iterator
+
+        System.out.println("use of Iterator");
+
+        Iterator<String> itr=v.iterator();
+        while(itr.hasNext())
+            System.out.println(itr.next());
+
+
+        // use of Enumeration
+        
+        System.out.println("use of Enumeration");
+
+        Enumeration<String> vnum = v.elements();
+        while(vnum.hasMoreElements());
+            System.out.println(vnum.nextElement());
     }
 }

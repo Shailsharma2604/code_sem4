@@ -16,4 +16,4 @@ Protected data members :-
 
     1. int capacityIncrement
     2. int elementCount;
-    3. int elementData;
+    3. Object[] elementData;

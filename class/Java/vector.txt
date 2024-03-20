@@ -1,0 +1,12 @@
+ 
+Vector class
+
+syntax: class Vector<E>
+
+4 constructors :-
+
+    1. Vector()
+    2. Vector(int size)
+    3. Vector(int size, int incr)
+    4. Vector(Collection<? extends E> c)
+    

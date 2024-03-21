@@ -1,0 +1,25 @@
+
+synatx :- interface Queue<E>
+
+1. ClassCastException
+2. NullPoointerException
+3. IllegalArgumentException
+4. IllegalStateException
+5. NoSuchElementException
+
+
+
+obtain and remove :- 
+
+poll() - remove null if queue is empty
+remove()- Exception if empty
+
+
+Obtain :- 
+
+element() - Exception if empty
+peek() - return null if queue is empty
+
+add element :- 
+
+offer() - only add elemnt to queue

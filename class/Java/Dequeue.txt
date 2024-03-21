@@ -1,0 +1,22 @@
+
+Dequeue :-
+
+FIFO + LIFO
+
+addFirst(E obj)
+addLast(E obj)
+
+E getFirst()
+E getLast()
+E peekFirst()
+E peekLast()
+E pollFirst()
+E pollLast()
+E pop()
+E pop()
+
+
+Exception throw :- 
+
+void push(E obj)
+E removeFirst()

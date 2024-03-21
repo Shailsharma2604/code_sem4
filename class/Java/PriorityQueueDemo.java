@@ -8,8 +8,11 @@ public class PriorityQueueDemo {
         PriorityQueue<String> q=new PriorityQueue<String>();
         // q.add("java");
         q.offer("java");
+        System.out.println("Added 'java' in queue");
         q.add("DBMS");
+        System.out.println("Added 'DBMS' in queue");
         q.add("ML");
+        System.out.println("Added 'ML' in queue");
         System.out.println("Content of priority :- "+q);
         System.out.println("Content of element :- "+q.element());
         System.out.println("Content of peek :- "+q.peek());

@@ -1,4 +1,6 @@
 
+The class is based on the basic principle of last-in-first-out.
+
 boolean empty()
 E peek()
 E pop()

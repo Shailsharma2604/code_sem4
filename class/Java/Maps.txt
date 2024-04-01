@@ -1,0 +1,88 @@
+A map is a object that stores the asscoiation between keys and values
+Given a key you can find the value
+Keys and values both are objects
+Keys are unique
+Values can be duplicate
+Some maps can contain null keys and null values
+Maps do not implements iterable interface i.e. we can't cycle through elements using for each and iterators 
+We can obtain a collection view of the map which allows the use of either for loop or iterator
+
+
+
+1. Map Interface
+Maps unique keys to values
+
+2. Map entry Interface
+Represents a key-value pair stored in a map
+Inner class of maps
+
+3. Navigation map interface
+implements sorted map interface
+extends map interface
+Used to get the closest matches to the given key
+
+4. Sortedmap interface
+extends map interface
+extends navigable map interface
+keys are stored in ascending order
+
+Map Interface
+
+Syntax : interface Map<k,v>
+
+1. ClassCasrException - object incompatible
+2. NullPointerException 
+3. UnsupportedOperationException
+4. IllegalArgumentException
+
+
+2. Basic operations :- 
+
+    1. get() - to obtain the value
+    2. put() - to put the values
+
+
+few more functions :- 
+
+    1. entrySet() - returns a set that contains the elements in the map
+    2. keySet() - to obtain the view of keySet
+    3. values() - to obtain the collection view of Values
+
+collection view - all that means by while maps can be integrated in larger collection frameworks
+
+SortedMap :- 
+
+1. ensures that the collection are maintained in ascending order
+2. Syntax : interface SortedMap<K,V>
+3. Exceptions :- 
+    a. NoSuchElementException
+    b. ClassCasrException
+    c. NullPointerException
+    d. IllegalArgumentException
+4. To get the submap :- 
+    a. headMap()
+    b. tailMap()
+    c. subMaap()
+5. To get first and last key :-
+    a. firstKey()
+    b. lastKey()
+
+
+navigable Interface :- 
+    1. extends SortedMap interface and supports the retrieval of enteries based on the closest match to a given key or keys
+    2. Syntax : interface NavigableMap<K,V>
+    3. Exceptions :- 
+        a. ClassCasrException
+        b. NullPointerException
+        c. IllegalArgumentException
+
+1. HashMap Class :- 
+    a. extends AbstractMap class and implements Map interface
+    b. use the hash table to store the map
+    c. execution time for get() and put() remains constant
+    d. Syntax : class HashMap<K,V>
+    e. constructors :- 
+        (i). HashMap() (default capacity - 16)
+        (ii). HashMap(Map<? extends K,?extends V>)
+        (iii). HashMap(int capacity)
+        (iv). HashMap(int capacity,float fillRatio) (.75)

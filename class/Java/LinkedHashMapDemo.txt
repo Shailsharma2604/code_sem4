@@ -1,0 +1,9 @@
+implement :- 
+    
+    remove()
+    contains key()
+    contains value()
+    clear()
+    values()
+    keyset()
+    hashcode()

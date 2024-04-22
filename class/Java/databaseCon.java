@@ -13,8 +13,10 @@ public class databaseCon {
             Statement stmt=con.createStatement();
 
             // Execute query
+            String query = ("INSERT INTO class_1 () VALUES (1, 'John', 'Doe', 'A')");
+            stmt.executeUpdate(query);
+            
             ResultSet rs=stmt.executeQuery("select * from class_1");
-
             while(rs.next())
                 System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3)+" "+rs.getString(4));
 

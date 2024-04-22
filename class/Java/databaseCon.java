@@ -15,6 +15,9 @@ public class databaseCon {
             // Execute query
             String query = ("INSERT INTO class_1 () VALUES (1, 'John', 'Doe', 'A')");
             stmt.executeUpdate(query);
+
+            String query2=("update class_1 set first_name='Jane' where Score='A'");
+            stmt.executeUpdate(query2);
             
             ResultSet rs=stmt.executeQuery("select * from class_1");
             while(rs.next())

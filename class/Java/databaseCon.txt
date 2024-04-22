@@ -1,0 +1,52 @@
+JDBC stands for Java DataBase Connectivity.
+JDBC is a java API to connect and execute query with database.
+Java API uses java drivers to connect with database.
+
+4 types of java drivers:
+Type1: JDBC -ODBC Bridge Driver
+Type2: Native Driver
+Type3: Network Protocol Driver
+Type4: Thin Driver
+
+List of interfaces:
+- Driver interfaces
+
+- Connection interfaces
+
+- Statement interfaces
+
+- PreparedStatement interfaces
+
+- CallableStatement interfaces
+
+- ResultSet interfaces
+
+- RowSet interfaces
+
+List of classes :
+- DriverManager class
+- Blob 
+- Clob
+- Types
+
+
+Java DataBase Connectivity steps:
+1. Register the Driver class :
+    To register the driver class, we use forName() method of class Class.
+
+    public static void forName(String className) throws ClassNotFoundException
+
+    Example:
+    Class.forName("com.mysql.jdbc.Driver");
+
+2. Create Connection :
+    getConnection() method of DriverManager class is used to establish connection with database.
+
+    public static Connection getConnection(String url, String username, String password) throws SQLException
+
+    Example:
+    Connection con = DriverManager.getConnection(url, username, password);
+3. Create Statement
+4. execute query
+5. process the result
+6. close the connection

@@ -10,13 +10,11 @@ POST is a methd of request module
 even if the condition is false, the html file is same but we can have different files if we provide different paths
 HTML file displays the form in the browser
 when the submit button is clicked, the data is redirected to same view because any other action is not mentioned
-to send the data to the database we use CRUD operations
 It will deploy the model and send the data to the database
 model is a database model, used to define the structure(schema) of database
 we need to define the database (done in models.py by making classes)
-ORM -- Object Relational Model
+ORM -- Object Relational Mapping
+ORM it connect the pyhton file with sql(Database)
 we need to run migration, so that django server runs sql query on behalf of user (Example for abstraction)
 Database storage ***
-If want to retrieve data from database, we need to use ORM
-
-
+first run migration then database will be created

@@ -52,6 +52,19 @@ public class day_8 {
         // System.out.println(marks[1]);
         // System.out.println(marks[2]);
 
+        // int[] marks={97,98,95};
+        // int[][] finalmarks={{97,98,99},{94,95,96}};
+        // System.out.println(finalmarks[0][1]);
+
+
+        // double price=100.00;
+        // double finalPrice=price+18;
+        // System.out.println(finalPrice);
+
+        // int p =100;
+        // int fp=p+(int)18.0;
+        // System.out.println(fp);
+
         
     }
 }

@@ -65,6 +65,20 @@ public class day_8 {
         // int fp=p+(int)18.0;
         // System.out.println(fp);
 
-        
+
+
+        // int age=30;
+        // age=31;
+        // age=32;
+
+        // final float PI =3.14F;
+        // PI=1.1F;
+
+
+        int a= 1;
+        int b=2;
+        int sum=a+b;
+        System.out.println(sum);
+
     }
 }

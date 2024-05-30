@@ -1,4 +1,5 @@
 
+import java.util.*;
 import java.util.Arrays;
 
 public class day_8 {
@@ -75,10 +76,36 @@ public class day_8 {
         // PI=1.1F;
 
 
-        int a= 1;
-        int b=2;
-        int sum=a+b;
-        System.out.println(sum);
+        // int a= 1;
+        // int b=2;
+        // int sum=a+b;
+        // System.out.println(sum);
+
+
+
+        // System.out.println(Math.max(5,6));
+        // System.out.println(Math.min(5,6));
+        // System.out.println((int)(Math.random()*100));
+
+
+        // Scanner sc=new Scanner(System.in);
+        // System.out.println("your age: ");
+        // int age=sc.nextInt();
+        // String name=sc.nextLine();
+        // System.out.println(age);
+        // System.out.println(name);
+
+
+
+        // boolean isSunUp = false;
+        // if(isSunUp==true){
+        //     System.out.println("day");
+        // }
+        // else{
+        //     System.out.println("night");
+        // }
+
+        
 
     }
 }
